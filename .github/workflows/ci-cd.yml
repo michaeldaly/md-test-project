@@ -75,7 +75,7 @@ jobs:
       - name: AWS Deploy push
         run: |
           aws deploy push \
-          --application-name md-test-project \
+          --application-name MD-Test-Project \
           --description "This is a revision for the md-test-project-${{ github.sha }}" \
           --ignore-hidden-files \
           --s3-location s3://md-test-project-builds/md-test-project-${{ github.sha }}.zip \
