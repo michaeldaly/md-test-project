@@ -87,6 +87,6 @@ jobs:
           aws deploy create-deployment \
           --application-name MD-Test-Project \
           --deployment-config-name CodeDeployDefault.OneAtATime \
-          --deployment-group-name Production \
+          --deployment-group-name MD-Test-Project \
           --file-exists-behavior OVERWRITE \
           --s3-location bucket=md-test-project-builds,key=md-test-project-${{ github.sha }}.zip,bundleType=zip \
