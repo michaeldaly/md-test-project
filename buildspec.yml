@@ -1,8 +1,9 @@
 version: 0.2
 phases:
-    pre_build:
+    install:
       runtime-versions:
         php: 8.0
+    pre_build:
       commands:
         # phpenmod xdebug
         - curl -s https://getcomposer.org/installer | php
