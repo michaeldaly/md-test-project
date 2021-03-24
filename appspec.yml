@@ -3,3 +3,6 @@ os: linux
 files:
   - source: /
     destination: /var/www/md-test-project
+hooks:
+  AfterInstall:
+    - location: scripts/AfterInstall.sh
