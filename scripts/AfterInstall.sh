@@ -9,7 +9,7 @@ cd /var/www/md-test-project
 
 #
 # Run composer
-sudo /usr/bin/composer.phar install --no-ansi --no-dev --no-suggest --no-interaction --no-progress --prefer-dist --no-scripts -d /var/www/md-test-project
+# sudo /usr/bin/composer.phar install --no-ansi --no-dev --no-suggest --no-interaction --no-progress --prefer-dist --no-scripts -d /var/www/md-test-project
 
 #
 # Run artisan commands
