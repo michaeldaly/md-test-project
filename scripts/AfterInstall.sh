@@ -13,4 +13,4 @@ sudo /usr/bin/composer.phar install --no-ansi --no-dev --no-suggest --no-interac
 
 #
 # Run artisan commands
-php /var/www/md-test-project/artisan migrate
+# php /var/www/md-test-project/artisan migrate
