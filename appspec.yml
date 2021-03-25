@@ -4,5 +4,7 @@ files:
   - source: /
     destination: /var/www/md-test-project
 hooks:
+  BeforeInstall:
+    - location: scripts/BeforeInstall.sh
   AfterInstall:
     - location: scripts/AfterInstall.sh
