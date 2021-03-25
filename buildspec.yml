@@ -7,7 +7,7 @@ phases:
       commands:
         # phpenmod xdebug
         - curl -s https://getcomposer.org/installer | php
-        - mv  composer.phar /usr/local/bin/composer
+        - mv composer.phar /usr/local/bin/composer
         - php --version
         # Start Mysql if you need it
         # - apt-get update -y
@@ -36,3 +36,4 @@ phases:
 artifacts:
   files:
     - '**/*'
+  name: md-test-project-$CODEBUILD_BUILD_NUMBER
