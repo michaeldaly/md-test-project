@@ -2,6 +2,6 @@
 
 @section('content')
 
-<h1>Hello - Version 2</h1>
+<h1>Hello - Version 3 - Dynamic ENV</h1>
 
 @endsection

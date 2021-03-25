@@ -21,10 +21,10 @@ phases:
         - echo Build started on `date`
         - echo Installing composer deps
         - composer install
-        - echo creating .env file
-        - cp .env.example .env
-        - echo generating app key
-        - php artisan key:generate
+        # - echo creating .env file
+        # - cp .env.example .env
+        # - echo generating app key
+        # - php artisan key:generate
     post_build:
       commands:
         - echo Build completed on `date`
