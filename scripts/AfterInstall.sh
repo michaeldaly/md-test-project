@@ -7,7 +7,14 @@ cd /var/www/md-test-project
 
 #
 # Copy the environment file from S3 to the local installation
-aws s3 cp s3://md-test-project-builds/production.env .env
+if [[ "$DEPLOYMENT_GROUP_NAME" == "staging-deployment-group" ]]
+then
+    #
+    aws s3 cp s3://md-test-project-builds/staging.env .env
+elif [[ "$DEPLOYMENT_GROUP_NAME" == "production-deployment-group" ]]
+then
+    aws s3 cp s3://md-test-project-builds/production.env .env
+fi
 
 
 # Set permissions to storage and bootstrap cache
