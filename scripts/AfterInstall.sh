@@ -32,7 +32,6 @@ sudo chmod -R 0777 bootstrap/cache
 php artisan cache:clear
 php artisan view:clear
 php artisan config:clear
-php artisan config:cache
 php artisan optimize
 php artisan route:cache
 
