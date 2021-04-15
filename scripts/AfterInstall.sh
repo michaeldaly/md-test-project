@@ -31,9 +31,9 @@ sudo chmod -R 0777 bootstrap/cache
 # Clear any previous cached views and optimize the application
 php artisan cache:clear
 php artisan view:clear
-php artisan config:clear
 php artisan optimize
 php artisan route:cache
+php artisan config:clear
 
 
 #
