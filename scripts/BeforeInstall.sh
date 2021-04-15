@@ -4,4 +4,6 @@ cd /var/www/md-test-project
 
 #
 # Stop the application
-php artisan down
+if [ -f "artisan" ]; then
+    php artisan down
+fi
