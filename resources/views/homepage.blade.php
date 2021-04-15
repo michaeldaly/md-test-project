@@ -7,4 +7,6 @@
 <h3>{{ env('APP_NAME') }}</h3>
 <h3>{{ env('APP_ENV') }}</h3>
 
+<p>{{ env('TEST_KEY') }}</p>
+
 @endsection
