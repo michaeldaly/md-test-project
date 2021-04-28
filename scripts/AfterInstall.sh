@@ -34,20 +34,21 @@ sudo chmod -R 0777 bootstrap/cache
 # Run composer
 # sudo /usr/bin/composer.phar install --no-ansi --no-dev --no-suggest --no-interaction --no-progress --prefer-dist --no-scripts -d /var/www/md-test-project
 
-
-# Clear any previous cached views and optimize the application
-php artisan cache:clear
-php artisan view:clear
-php artisan optimize
-php artisan route:cache
-php artisan config:clear
-
-
-#
-# Run artisan commands
-# php /var/www/md-test-project/artisan migrate
+if [ -f "artisan" ]; then
+    # Clear any previous cached views and optimize the application
+    php artisan cache:clear
+    php artisan view:clear
+    php artisan optimize
+    php artisan route:cache
+    php artisan config:clear
 
 
-#
-# Start the application
-php artisan up
+    #
+    # Run artisan commands
+    # php /var/www/md-test-project/artisan migrate
+
+
+    #
+    # Start the application
+    php artisan up
+fi
