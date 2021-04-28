@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/md-test-project
+    destination: /var/www/builds/md-test-project
 hooks:
   BeforeInstall:
     - location: scripts/BeforeInstall.sh
