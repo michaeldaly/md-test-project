@@ -9,17 +9,17 @@
 # Copy the environment file from S3 to the local installation
 if [[ "$DEPLOYMENT_GROUP_NAME" == "dev-deployment-group" ]]
 then
-    cp -R /var/www/builds/md-test-project /var/www/md-test-project
+    cp -R /var/www/builds/md-test-project/* /var/www/md-test-project
     cd /var/www/md-test-project
     aws s3 cp s3://md-test-project-builds/config-files/dev.env .env
 elif [[ "$DEPLOYMENT_GROUP_NAME" == "staging-deployment-group" ]]
 then
-    cp -R /var/www/builds/md-test-project /var/www/md-test-project-staging
+    cp -R /var/www/builds/md-test-project/* /var/www/md-test-project-staging
     cd /var/www/md-test-project-staging
     aws s3 cp s3://md-test-project-builds/config-files/staging.env .env
 elif [[ "$DEPLOYMENT_GROUP_NAME" == "production-deployment-group" ]]
 then
-    cp -R /var/www/builds/md-test-project /var/www/md-test-project-prod
+    cp -R /var/www/builds/md-test-project/* /var/www/md-test-project-prod
     cd /var/www/md-test-project-prod
     aws s3 cp s3://md-test-project-builds/config-files/production.env .env
 fi
