@@ -20,7 +20,7 @@ jobs:
       - name: Fix style
         uses: docker://oskarstark/php-cs-fixer-ga
         with:
-          args: --config=.php-cs-fixer --diff --dry-run --allow-risky=yes
+          args: --config=.php-cs-fixer.php --diff --dry-run --allow-risky=yes
 
   # buildAndTest:
   #   name: CI Pipeline
