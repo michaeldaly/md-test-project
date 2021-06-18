@@ -14,10 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      name: Fix style
-      uses: docker://oskarstark/php-cs-fixer-ga
-      with:
-        args: --config=.php-cs-fixer --diff --dry-run --allow-risky=yes
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Fix style
+        uses: docker://oskarstark/php-cs-fixer-ga
+        with:
+          args: --config=.php-cs-fixer --diff --dry-run --allow-risky=yes
 
   # buildAndTest:
   #   name: CI Pipeline
