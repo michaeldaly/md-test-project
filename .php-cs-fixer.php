@@ -9,6 +9,7 @@ $finder = Symfony\Component\Finder\Finder::create()
     ->notName('*.blade.php');
 
 $config = new PhpCsFixer\Config();
+
 return $config->setRules([
         '@PSR2' => true,
         'array_syntax' => ['syntax' => 'short'],
