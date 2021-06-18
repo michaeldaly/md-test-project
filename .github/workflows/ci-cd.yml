@@ -10,10 +10,15 @@ on:
 
 jobs:
   buildAndTest:
-    name: PHP Style Test
-    uses: docker://oskarstark/php-cs-fixer-ga
-    with:
+    name: CI Pipeline
+    runs-on: ubuntu-latest
+
+    steps:
+      name: Fix style
+      uses: docker://oskarstark/php-cs-fixer-ga
+      with:
         args: --config=.php-cs-fixer --diff --dry-run --allow-risky=yes
+
   # buildAndTest:
   #   name: CI Pipeline
   #   runs-on: ubuntu-latest
