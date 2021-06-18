@@ -1,6 +1,7 @@
 name: CI/CD
 
 on:
+  workflow_dispatch,
   push:
     branches:
       - main
@@ -17,7 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Fix style
+      - name: Check php style
         uses: docker://oskarstark/php-cs-fixer-ga
         with:
           args: --config=.php-cs-fixer.php --diff --dry-run --allow-risky=yes
