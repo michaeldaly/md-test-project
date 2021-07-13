@@ -17,9 +17,8 @@ class ExampleTest extends TestCase
     }
 
     /** @test */
-    function anotherExample()
+    public function anotherExample()
     {
         $this->assertTrue(true);
     }
-
 }
