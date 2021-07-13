@@ -15,4 +15,11 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    /** @test */
+    function anotherExample()
+    {
+        $this->assertTrue(true);
+    }
+
 }
