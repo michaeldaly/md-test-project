@@ -23,7 +23,7 @@ class ExampleTest extends TestCase
     }
 
     /** @test */
-    function thirdTestExample()
+    public function thirdTestExample()
     {
         $this->assertTrue(true);
     }
