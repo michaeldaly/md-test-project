@@ -1,4 +1,4 @@
-name: CI/CD
+name: "Run Code Formatting Test"
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   buildAndTest:
-    name: CI Pipeline
+    name: Code Formatting
     runs-on: ubuntu-latest
 
     steps:
