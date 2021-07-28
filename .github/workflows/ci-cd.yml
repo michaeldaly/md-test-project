@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  buildAndTest:
+  codeFormatting:
     name: Code Formatting
     runs-on: ubuntu-latest
 
