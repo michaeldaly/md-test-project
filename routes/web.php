@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $test = array('test', 'test', 'test');
+    $test = ['test', 'test', 'test'];
 
     return view('homepage');
 });
